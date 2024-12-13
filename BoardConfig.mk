@@ -188,5 +188,8 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 TARGET_HAS_BROKEN_WLAN_SET_INTERFACE := true
 
+# Optimisations
+TARGET_DISPLAY_USE_SMOOTH_MOTION := true
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/vince/BoardConfigVendor.mk

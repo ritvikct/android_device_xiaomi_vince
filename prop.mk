@@ -283,6 +283,9 @@ ro.telephony.block_binder_thread_on_incoming_calls=false
 PRODUCT_SYSTEM_PROPERTIES += \
 persist.sys.recovery_update=false
 
+# Optimisations
+vendor.display.use_smooth_motion=1 \
+
 PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.recovery_update=false
 
