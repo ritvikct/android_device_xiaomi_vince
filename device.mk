@@ -167,9 +167,10 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     libdng_sdk.vendor
 
-# Camera app (GrapheneOS)
+# Camera app (GCam-go)
 PRODUCT_PACKAGES += \
-    Camera
+    GCamGOPrebuilt-V3
+
 
 # Consumerir
 PRODUCT_PACKAGES += \
