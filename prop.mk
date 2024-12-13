@@ -13,6 +13,8 @@ dalvik.vm.dex2oat64.enabled=true \
 dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7 \
 dalvik.vm.image-dex2oat-filter=speed-profile \
 dalvik.vm.image-dex2oat-threads=8 \
+dalvik.vm.dex2oat-minidebuginfo=false \
+dalvik.vm.minidebuginfo=false
 dalvik.vm.systemuicompilerfilter=speed
 
 # Audio
