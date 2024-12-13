@@ -32,6 +32,7 @@ $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # PixelExperience specific flags
+TARGET_USES_MINI_GAPPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
