@@ -362,6 +362,8 @@ media.wfd.max_resolution=7
 # Zygote
 PRODUCT_SYSTEM_PROPERTIES += \
 zygote.critical_window.minute=10
+persist.device.config.runtime_native.usap_pool_enabled=true
+persist.device_config.runtime_native.usap_pool_enabled=true
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 # Suppress several logspams on user builds
