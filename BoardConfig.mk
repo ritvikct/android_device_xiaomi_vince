@@ -58,6 +58,8 @@ TARGET_KERNEL_CONFIG := vince-perf_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := aosp
 TARGET_KERNEL_LLVM_BINUTILS := false
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-aosp
+#KERNEL_TOOLCHAIN_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-11/bin/aarch64-linux-gnu-
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
