@@ -286,6 +286,15 @@ persist.sys.recovery_update=false
 # Optimisations
 vendor.display.use_smooth_motion=1 \
 
+# DHA Tunning
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.config.dha_tunnable=1
+
+# Smoothens UI
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.service.lgospd.enable=0 \
+persist.service.pcsync.enable=0
+
 PRODUCT_VENDOR_PROPERTIES += \
 persist.vendor.recovery_update=false
 
