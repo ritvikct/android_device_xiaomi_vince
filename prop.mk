@@ -357,7 +357,7 @@ wifi.interface=wlan0
 
 # Wifi Display (Platform)
 PRODUCT_SYSTEM_PROPERTIES += \
-media.wfd.max_resolution=5
+media.wfd.max_resolution=7
 
 # Zygote
 PRODUCT_SYSTEM_PROPERTIES += \
