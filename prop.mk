@@ -234,6 +234,8 @@ persist.sys.fuse.transcode_enabled=false
 # Perf
 PRODUCT_VENDOR_PROPERTIES += \
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.perf.scroll_opt=true \
+ro.sys.fw.dex2oat_thread_count=8 \
 
 # Network manager daemon
 PRODUCT_VENDOR_PROPERTIES += \
