@@ -169,7 +169,7 @@ PRODUCT_PACKAGES += \
 
 # Camera app (GCam-go)
 PRODUCT_PACKAGES += \
-    GCamGOPrebuilt-V3
+    GCamGOPrebuilt-V2
 
 
 # Consumerir
