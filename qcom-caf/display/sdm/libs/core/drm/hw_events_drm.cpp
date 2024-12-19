@@ -209,12 +209,7 @@ void *HWEventsDRM::DisplayEventHandler() {
   char data[kMaxStringLength]{};
 
   prctl(PR_SET_NAME, event_thread_name_.c_str(), 0, 0, 0);
-
-  struct sched_param param = {0};
-  param.sched_priority = 2;
-  if (sched_setscheduler(0, SCHED_RR, &param) != 0) {
-    DLOGE("Couldn't set SCHED_RR: %d", errno);
-  }
+  setpriority(PRIO_PROCESS, 0, kThreadPriorityUrgent);
 
   while (!exit_threads_) {
     if (RegisterVSync() != kErrorNone) {
