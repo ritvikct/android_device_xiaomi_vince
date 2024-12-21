@@ -28,8 +28,8 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 # Inherit extra stuff
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
-# Inherit some common PixelExperience stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common ArrowOS-Extended stuff.
+$(call inherit-product, vendor/arrow/config/common_full_phone.mk)
 
 # PixelExperience specific flags
 TARGET_USES_MINI_GAPPS := true
@@ -41,7 +41,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := aosp_vince
+PRODUCT_NAME := arrow_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
