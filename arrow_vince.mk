@@ -29,7 +29,7 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Inherit some common ArrowOS-Extended stuff.
-$(call inherit-product, vendor/arrow/config/common_full_phone.mk)
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # PixelExperience specific flags
 TARGET_USES_MINI_GAPPS := true
