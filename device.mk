@@ -111,9 +111,6 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
     libtinycompress \
-    libhfp \
-    libsndmonitor \
-    libspkrprot \
     libaudiopreprocessing \
     libaudioroute \
     libvolumelistener
@@ -169,7 +166,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.6:64 \
     vendor.qti.hardware.camera.device@1.0 \
     camera.msm8953 \
-    libmm-qcamera \
     libdng_sdk.vendor
 
 # Camera app (GCam-go)
@@ -199,14 +195,12 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    copybit.msm8953 \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
     libvulkan \
     libqdMetaData.system \
-    libgralloc.system.qti \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor
@@ -221,11 +215,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1 \
     android.hardware.biometrics.fingerprint@2.1.vendor \
     libunwind
-
-# FM
-PRODUCT_PACKAGES += \
-    RevampedFMRadio \
-    libqcomfmjni
 
 # Fwk-detect
 PRODUCT_PACKAGES += \
@@ -274,9 +263,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
-    android.hidl.base@1.0_system \
     android.hidl.manager@1.0 \
-    android.hidl.manager@1.0-java \
     android.hidl.allocator@1.0.vendor
 
 # IMS
@@ -373,8 +360,7 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson \
-    libjson.vendor
+    libjson
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qmi_fw.conf:$(TARGET_COPY_OUT_VENDOR)/etc/qmi_fw.conf
@@ -403,7 +389,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.secure_element@1.2.vendor \
     librmnetctl \
-    librmnetctl.vendor \
     libxml2 \
     extphonelib \
     extphonelib-product \
@@ -431,10 +416,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libui_shim \
     libui_shim.vendor:32
-
-# TextClassifier smart selection model files
-PRODUCT_PACKAGES += \
-    textclassifier.bundle1
 
 # Thermal
 PRODUCT_PACKAGES += \
