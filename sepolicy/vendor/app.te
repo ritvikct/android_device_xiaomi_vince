@@ -1,2 +1,0 @@
-# Allow appdomain to read camera_prop
-get_prop(appdomain, camera_prop)
